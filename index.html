@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <title>APPS</title>
+  </head>
+  <body>
+    <?
+      for(i in data){
+        if(email == data[i][3]){
+          output._ = ' Name: ' + data[i][0] + '  University: ' + data[i][1] + '  Major: ' + data[i][2]
+          flag = 1
+        }
+      }
+
+      if(0 == flag) output._ = 'user not found'
+
+    ?>
+  </body>
+</html>
